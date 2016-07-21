@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelfAdaptiveActivity"
+    android:orientation="vertical">
+    <com.gomen.test.view.SelfAdaptiveEditText
+        android:id="@+id/selfAdaptiveEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4400ff00"
+        style="@style/Formula"
+        android:inputType="text|textNoSuggestions"
+        android:textColor="#8A000000">
+
+    </com.gomen.test.view.SelfAdaptiveEditText>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/button"
+        android:text="添加"
+        android:layout_below="@+id/selfAdaptiveEditText"/>
+</RelativeLayout>
